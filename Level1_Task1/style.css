@@ -1,0 +1,490 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    overflow-x: hidden;
+}
+
+.mainContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+}
+
+.leftContainer {
+    flex: 7;
+}
+
+.rightContainer {
+    flex: 6;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 20px;
+    font-family: serif;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* background-color: rebeccapurple; */
+    width: 100%;
+}
+
+.introLogo {
+    padding-left: 50px;
+    margin-top: 10px;
+    width: 120px;
+    height: 120px;
+}
+
+.introLogo img {
+    width: 120px;
+    height: 120px;
+    border-radius: 20px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+
+}
+
+nav ul li {
+    margin: 0 10px;
+    /* Add some margin for spacing */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    /* Adjust text color for your design */
+    padding: 50px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+nav ul li.Login a:hover {
+    color: orange;
+
+}
+
+nav ul li.Signup a {
+    text-decoration: none;
+    color: white;
+    border-radius: 0;
+    padding: 15px 40px;
+    font-size: 20px;
+    box-shadow: 2px 2px 3px 0 rgba(0, 0, 0, 0.2);
+    /* Add this line for the box shadow */
+    background-color: black;
+}
+
+.Login {
+    font-weight: 600;
+}
+
+/* .Signup{
+    font-weight: 600;
+} */
+.rightContainer {
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+
+}
+
+.rightContainer img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    /* border-radius:40px; */
+
+}
+
+
+
+.midPart {
+    /* background-color: yellow; */
+    margin-top: 40px;
+    /* Add margin at the top to create space between the header and midPart */
+    padding: 20px;
+    /* Add some padding to the midPart for spacing */
+    width: 100%;
+    height: auto;
+}
+
+.midPart .headings {
+    margin-bottom: 20px;
+    /* Add margin at the bottom of the headings */
+
+}
+
+.midPart .headings h1 {
+    font-size: 60px;
+
+}
+
+.midPart .headings p {
+    margin-top: 10px;
+    font-size: 40px;
+
+}
+
+.midPart .search {
+    margin-bottom: 20px;
+    /* Add margin at the bottom of the search input */
+}
+
+.search input {
+    padding: 20px;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    width: 60%;
+}
+
+.search {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    padding: 0;
+    border: 2px solid orange;
+    margin-top: 50px;
+}
+
+.search div {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    background-color: orange;
+    margin: 0;
+    height: 68px;
+    padding: 5px;
+
+}
+
+.search div a {
+    font-size: 30px;
+    text-decoration: none;
+
+}
+
+/* Add animation to the search div when focused */
+.search:focus-within {
+    border-color: #ff9900;
+    /* Change the border color when focused */
+    animation: searchAnimation 0.3s ease-in-out;
+}
+
+@keyframes searchAnimation {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.05);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.button:hover {
+    transform: scale(0.9);
+    transition: transform 0.3s;
+}
+
+
+.midPart .headings2 {
+    margin-top: 20px;
+    /* Add margin at the top of the headings2 */
+}
+
+.headings2 h3 {
+    font-size: 25px;
+    margin-top: 40px;
+}
+
+.headings2 li {
+    list-style: none;
+    font-size: 20px;
+}
+
+.headings2 a {
+    text-decoration: none;
+}
+
+.headings2 ul {
+    display: flex;
+    margin-top: 10px;
+}
+
+.headings2 ul li {
+    padding: 9px;
+}
+
+.container {
+    margin-top: -50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 700px;
+    background: #2b1e16;
+    text-align: center;
+
+}
+
+.container .column1 {
+    width: 33%;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.container .insideHeading {
+    font-size: 30px;
+    font-weight: 600;
+    color: white;
+    margin-top: 50px;
+}
+
+.container .insidePara {
+    font-size: 18px;
+    width: 260px;
+    color: #e0cbc1;
+    line-height: 1.3;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 112px;
+}
+
+.bigContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.leftContent {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    padding: 20px;
+    align-items: start;
+    text-align: start;
+    margin-left: 25px;
+}
+
+.leftContent .resHead {
+    font-size: 50px;
+    font-weight: 600;
+    width: 300px;
+    line-height: 1;
+    letter-spacing: -.45px;
+    text-align: start;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.leftContent .paras {
+    margin-top: 20px;
+    font-size: 20px;
+    width: 400px;
+    font-weight: 300;
+    padding-top: 20px;
+    padding-bottom: 60px;
+    color: #7e808c;
+    line-height: 1.2;
+}
+
+.leftContent .buttons img {
+    border-style: none;
+    width: 250px;
+}
+
+.leftContent .buttons .button2 {
+    margin-left: 25px;
+}
+
+.rightContent {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.appleimages {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.rightContent .appleimages .apple1img {
+    position: relative;
+    margin-top: 850px;
+    width: 500px;
+    margin-right: 450px;
+    margin-bottom: 970px;
+}
+
+.rightContent .appleimages .apple2img {
+    position: absolute;
+    width: 500px;
+    margin-bottom: -100px;
+    margin-left: 500px;
+
+}
+
+.footCont {
+    background-color: #000;
+    position: relative;
+    padding: 0px 20px;
+    color: #fff;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 100px;
+
+}
+
+.footCont .left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    flex: 25%;
+    padding: 20px;
+    text-align: start;
+
+}
+
+.anchors {
+    margin-bottom: 30px;
+}
+
+.footCont .left ul li {
+    list-style: none;
+}
+
+.footCont .left ul li a {
+    text-decoration: none;
+    color: inherit;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.footCont .left .company {
+    color: gray;
+    font-size: 25px;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.footCont .mid1 {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    flex: 25%;
+    padding: 20px;
+    text-align: left;
+}
+
+.footCont .mid1 .contact {
+    color: gray;
+    font-size: 20px;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.footCont .mid1 ul li {
+    list-style: none;
+}
+
+.footCont .mid1 ul li a {
+    text-decoration: none;
+    color: inherit;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.footCont .mid2 {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    flex: 25%;
+    padding: 20px;
+    text-align: left;
+}
+
+.footCont .mid2 .legal {
+    color: gray;
+    font-size: 20px;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.footCont .mid2 ul li {
+    list-style: none;
+}
+
+.footCont .mid2 ul li a {
+    text-decoration: none;
+    color: inherit;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.footCont .right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 25%;
+    padding: 20px;
+    text-align: left;
+}
+
+.footCont .right ul li {
+    list-style: none;
+}
+
+.footCont .right ul li a {
+    text-decoration: none;
+}
+
+.footCont .right {
+    margin-bottom: 400px;
+}
+
+.footCont .right .anchor2 {
+    margin-top: 50px;
+}
